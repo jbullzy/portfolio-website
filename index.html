@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Jack Bullington</title>
+    <link rel="icon" href="/images/me.jpeg">
+    <style>
+        /* Make the favicon circular */
+        .circular-favicon {
+            width: 32px; /* Set the desired width and height for your circular favicon */
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7e1771f933.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,17 +38,17 @@
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href=#services class="navbar__links">
+                    <a href=#projects class="navbar__links">
                         Projects
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">
+                    <a href="#about" class="navbar__links">
                         About
                     </a>
                 </li>
-                <li class="navbar__btn">
-                    <a href="/contact.html" class="button">
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links">
                         Contact
                     </a>
                 </li>
@@ -55,32 +65,123 @@
                 <h1>Jack Bullington</h1>
                 <h2></h2>
                 <p>Software engineering and design</p>
-                <button class="main__btn"><a href=#services>My Projects</a></button>
+                <button class="main__btn"><a href=#projects>My Projects</a></button>
 
             </div>
         </div>
     </div>
 
-    <!-- Services Section -->
+    <!-- projects Section -->
 
-    <div id ="services" class="services">
+    <div id ="projects" class="projects">
         <h1>My Projects</h1>
-        <div class="services__container">
-            <div class="services__card">
+        <div class="projects__container">
+            <div class="projects__card">
                 <h2>Running Application</h2>
                 <p>Going the distance</p>
                 <button>View</button>
             </div>
-            <div class="services__card">
+            <div class="projects__card">
                 <h2>Lifting Program</h2>
                 <p>Yanking big loads</p>
                 <button>View</button>
             </div>
-            <div class="services__card">
+            <div class="projects__card">
                 <h2>Machine Learning</h2>
                 <p>Most based ML program</p>
                 <button>View</button>
             </div>
+        </div>
+    </div>
+
+      <!-- About Section -->
+
+      <div id = "about" class="about__container">
+
+        <div class="about__media">
+            <img src="/images/me2.jpeg" alt="Jack Bullington">
+        </div>
+        <div class="about__text">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               
+            </p>
+        </div>
+
+    </div>
+
+    <!-- CV Section -->
+
+    <div id="cv-section" class="cv-section">
+        <h1 class="cv-title">My Career History</h1>
+        <ul class="cv-list">
+            <li>
+                <div class="cv-item">
+                    <div class="cv-text">
+                        <img src="/images/ASU logo.png" alt="ASU Logo" class="cv-logo">
+                        <div class="cv-name">Arizona State University - B.A. Economics, May 2021</div>
+                    </div>
+                    <div class="cv-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="cv-item">
+                    <div class="cv-text">
+                        <img src="/images/FIBT logo.png" alt="FIBT Logo" class="cv-logo">
+                        First International Bank and Trust - Portfolio Manager, May 2022 - May 2023
+                    </div>
+                    <div class="cv-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </li>
+         
+
+            <li>
+                <div class="cv-item">
+                    <div class="cv-text">
+                        <img src="/images/logoRE.jpg" alt="DCB Logo" class="cv-logo">
+                        Diversified Commercial Brokerage - Analyst, May 2023 - September 2023
+                    </div>
+                    <div class="cv-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </li>
+           
+
+            <li>
+                <div class="cv-item">
+                    <div class="cv-text">
+                        <img src="/images/fullstack.png" alt="ASU Logo" class="cv-logo">
+                        Self-taught software engineering curriculum - September 2023 - Present
+                    </div>
+                    <div class="cv-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact" class="contact__container">
+        <h2 class="contact__title">Contact</h2>
+        <div class="contact__info">
+            <div class="email">Email: bullington.jack@gmail.com</div>
+            <div class="phone">Cell: (602) 538-9454</div>
         </div>
     </div>
 
@@ -123,5 +224,6 @@
     </div>  
 
     <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
