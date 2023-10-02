@@ -11,7 +11,7 @@ html {
 }
 
 .navbar {
-    background: #fff;
+    background: #FAF9F6;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -96,12 +96,12 @@ html {
 }
 
 .button:hover {
-    background: #f4f4f4;
+    background: #f9eed6;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    background: #f4f4f4;
+    background: #ececec;
     transition: all 0.3s ease;
 }
 
@@ -204,7 +204,7 @@ html {
 
 /* Hero Section CSS */
 .main {
-    background-color: #fff;
+    background-color: #FAF9F6;
 }
 
 .main__container {
@@ -214,7 +214,7 @@ html {
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #fff;
+    background-color: #FAF9F6;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -223,28 +223,13 @@ html {
 
 .main__content h1 {
     font-size: 4rem;
-    
+    margin-left: 5px;
 }
 
-.main__content h2 {
-    font-size: 4rem;
-    background-color: #333;
-    background-image: #333;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content h3 {
-    font-size: 3rem;
-    color: #333;
-    
-}
 
 .main__content p {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
     font-weight: 700;
     color: #141414;
@@ -257,43 +242,41 @@ html {
 
 .main__btn {
     font-size: 1rem;
-    background-color: gray;
+    background-color: #ececec;
+    color: black;
     padding: 14px 32px;   
     border: none;
     border-radius: 4px;
-    color: #fff;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
     outline: none;
-}
+    text-decoration: none;
+    }
 
 .main__btn a {
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
-.main__btn::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #4837ff;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
+
+
 
 .main__btn:hover {
-    color: #fff;
+    background: #7d7d7d;
+    transition: all 0.3s ease;
 }
 
 .main__btn:hover:after {
     width: 100%;
+}
+
+.main__content a:hover {
+    color: white;
+    transition: all 0.3s ease;
 }
 
 .main__img--container {
@@ -362,18 +345,18 @@ html {
 /* projects Section CSS */
 
 .projects { 
-    background: #fff;
+    background: #FAF9F6;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 .projects h1 {
-    background-color: #333;
+    background-color: black;
     background-size: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -422,33 +405,19 @@ html {
 
 .projects h2 { 
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 30px;
 }
 
 .projects__card p {
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 30px;
-}
-
-.projects__card button {
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color: grey;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 .projects__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
@@ -605,15 +574,20 @@ html {
 
 /* About CSS */
 
+.bottom__container {
+    background-image: url(/images/about-background.jpeg);
+    padding: 5rem;
+}
+
 .about__container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 2vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     height: auto;
-    /* background-color: red; */
+    background-color: #FAF9F6;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -627,16 +601,15 @@ html {
     flex-direction: column;
     flex: 1;
     max-height: 60vh;
-    /* background-color: orange; */
-    padding: 30px;
+    padding: 5rem;
     position: relative;
     overflow: auto;
     margin-left: -100px;
+    background-color: #fbd582;
 }
 
 .about__media { 
     display: flex;
-    /* background-color: yellow; */
     flex: 1;
     padding: 30px;
     justify-content: start;
@@ -653,8 +626,10 @@ html {
 .cv-section {
     margin: 20px;
     margin-left: 60px;
+    padding: 3rem 0 3rem 0;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .cv-title {
@@ -711,6 +686,14 @@ html {
     max-height: none;
 }
 
+.cv__resume {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 3rem;
+    
+}
+
 /* Contact CSS */
 
 .contact__container {
@@ -718,16 +701,10 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-    height: auto;
+    margin: 2vh 2vh 2vh 2vh;
     padding: 20px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    overflow: visible;
-    position: relative;
+    width: auto;
 }
 
 .contact__info {
@@ -738,9 +715,25 @@ html {
     padding: 5px;
 }
 
+.contact__box {
+    background-color: #fbd582;
+    padding: 20px;
+}
+
+.contact__title {
+    display: flex;
+    justify-content: center;
+}
+
 .email {
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.email:hover {
+    cursor: pointer;
 }
 
 .phone {
