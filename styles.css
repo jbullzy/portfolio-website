@@ -18,8 +18,6 @@ html {
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    /* The z-index dictates position in the frame. If you set it to a high
-    number like 999, it guarantees that the element will be at the top.  */
     z-index: 999;
 }
 
@@ -30,29 +28,8 @@ html {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    /* margin: top, right, bottom, left. Dictates the margins of the block. 
-    If you only do two, it's top/bottom, right/left. */
     margin: 0 auto;
     padding: 0 50px;
-}
-
-#navbar__logo {
-    /* background-color: #fff;
-    background-image: linear-gradient(to top, #F9A826 0%, #fe5196 100%); */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-.fa-j {
-    margin-right: 0.5rem;
 }
 
 .navbar__menu {
@@ -74,30 +51,6 @@ html {
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-}
-
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
-
-    outline: black;
-
-}
-
-.button:hover {
-    background: #f9eed6;
-    transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
@@ -132,7 +85,7 @@ html {
     }
 
     .navbar__menu.active {
-        background: #fff;
+        background: #FAF9F6;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -170,7 +123,7 @@ html {
         right: 5%;
         transform: translate(5%, 20%);
     }
-
+/* 
     .navbar__btn {
         padding-bottom: 2rem;
     }
@@ -182,7 +135,7 @@ html {
         width: 80%;
         height: 80px;
         margin: 0;
-    }
+    } */
 
     .navbar__toggle .bar {
         display: block;
@@ -213,7 +166,7 @@ html {
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     background-color: #FAF9F6;
     z-index: 1;
     width: 100%;
@@ -262,16 +215,9 @@ html {
     text-decoration: none;
 }
 
-
-
-
 .main__btn:hover {
     background: #7d7d7d;
     transition: all 0.3s ease;
-}
-
-.main__btn:hover:after {
-    width: 100%;
 }
 
 .main__content a:hover {
@@ -369,6 +315,7 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .projects__card {
@@ -446,10 +393,171 @@ html {
     }
 }
 
+/* About CSS */
+
+.bottom__container {
+    background-image: url(/images/about-background.jpeg);
+    padding: 5rem 5rem 2.5rem 5rem;
+}
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    height: auto;
+    background-color: #FAF9F6;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    overflow: visible;
+    position: relative;
+}
+
+
+.about__text { 
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: #fbd582;
+}
+
+.about__media { 
+    display: flex;
+    margin: 40px 20px;
+}
+
+.about__media img {
+    height: 30vh;
+    width: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+}
+
+.cv-section {
+    margin: 20px;
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.cv-title {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    margin: 0 60px 0 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.cv-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cv-item {
+    /* top | right | bottom | left */
+    margin: 30px 60px 10px 60px;
+}
+
+.cv-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cv-text {
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.cv-text:hover {
+    transform: scale(1.01);
+}
+
+
+.cv-description {
+    display: none;
+    margin-top: 0;
+    font-size: 16px;
+    color: #777;
+    margin-left: 60px;
+    margin-right: 30px;
+    transition: max-height 0.3s ease-in-out;
+    max-height: none;
+}
+
+.cv__resume {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 3rem;
+}
+
+/* Contact CSS */
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+    padding: 20px;
+    z-index: 1;
+    width: auto;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.contact__box {
+    background-color: #fbd582;
+    padding: 20px;
+}
+
+.contact__title {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.email:hover {
+    cursor: pointer;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
 /* Footer CSS */
 .footer__container {
     background-color: #141414;
-    padding: 5rem 0;
+    padding: 5rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -569,175 +677,4 @@ html {
         width: 100%;
     }
     
-}
-
-
-/* About CSS */
-
-.bottom__container {
-    background-image: url(/images/about-background.jpeg);
-    padding: 5rem;
-}
-
-.about__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 2vh;
-    margin-bottom: 10vh;
-    height: auto;
-    background-color: #FAF9F6;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    overflow: visible;
-    position: relative;
-}
-
-
-.about__text { 
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    max-height: 60vh;
-    padding: 5rem;
-    position: relative;
-    overflow: auto;
-    margin-left: -100px;
-    background-color: #fbd582;
-}
-
-.about__media { 
-    display: flex;
-    flex: 1;
-    padding: 30px;
-    justify-content: start;
-    margin-left: 90px;
-}
-
-.about__media img {
-    height: 30vh;
-    width: auto;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.cv-section {
-    margin: 20px;
-    margin-left: 60px;
-    padding: 3rem 0 3rem 0;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-
-.cv-title {
-    display: flex;
-    justify-content: center;
-    color: #333;
-    margin: 0 60px 0 60px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid grey;
-}
-
-.cv-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.cv-item {
-    /* top | right | bottom | left */
-    margin: 30px 60px 10px 60px;
-}
-
-.cv-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.cv-text {
-    cursor: pointer;
-    font-size: 18px;
-    color: #555;
-    display: flex;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-}
-
-.cv-text:hover {
-    transform: scale(1.01);
-}
-
-
-.cv-description {
-    display: none;
-    margin-top: 0;
-    font-size: 16px;
-    color: #777;
-    margin-left: 60px;
-    margin-right: 30px;
-    transition: max-height 0.3s ease-in-out;
-    max-height: none;
-}
-
-.cv__resume {
-    display: flex;
-    justify-content: center;
-    color: black;
-    margin-top: 3rem;
-    
-}
-
-/* Contact CSS */
-
-.contact__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2vh 2vh 2vh 2vh;
-    padding: 20px;
-    z-index: 1;
-    width: auto;
-}
-
-.contact__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5px;
-    padding: 5px;
-}
-
-.contact__box {
-    background-color: #fbd582;
-    padding: 20px;
-}
-
-.contact__title {
-    display: flex;
-    justify-content: center;
-}
-
-.email {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-}
-
-.email:hover {
-    cursor: pointer;
-}
-
-.phone {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
 }
